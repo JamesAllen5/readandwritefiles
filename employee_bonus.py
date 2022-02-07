@@ -13,8 +13,9 @@ for record in employee_file:
 
     salary = float(record[3])
     bonus = float(record[4])
-    bonus = salary * bonus
+    bonus = round(salary * bonus, 2)
     print("Bonus: ", bonus)
-    total_Pay = (salary * bonus) + salary
+    total_Pay = round((salary * bonus) + salary, 2)
 
     print("Total Pay: ", total_Pay)
+    input("Press Enter to to continue to the next employee")
